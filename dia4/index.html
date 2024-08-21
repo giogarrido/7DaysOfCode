@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lógica JS 4/7</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__contenido">
+            <img src="assets/img/robot.png" alt="Robot" class="container__imagen-robot" />
+            <div class="container__informaciones">
+                <img src="assets/img/trophy.png" alt="Icono de trofeo" />
+                 <div class="container__texto">
+                    <h1></h1>
+                    <input type="number" id="valorUsuario" min="0" max="10" class="container__input">
+                    <p></p>
+                </div>
+                <div class="container__botones">
+                    <button onclick="verificarIntento();" class="container__boton">Comprobar</button>
+                    <button onclick="reiniciarJuego();" class="container__boton" id="reiniciar">Reiniciar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
