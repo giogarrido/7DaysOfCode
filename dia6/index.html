@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lógica JS 5/7</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__contenido">
+            <img src="assets/img/carrito.png" alt="Carrito de super" class="container__imagen-carrito" />
+            <div class="container__informaciones">   
+                <h1 id="titulo">Lista del super</h1>             
+                 <div class="container__texto" id="containerAgregarProducto">
+                    
+                    <p>¿Qué producto quiere agregar?</p>
+                    <input type="text" id="nuevoProducto" class="container__input">
+                    <p>Selecciones una categoría</p>
+                    <select id="categoriaSelect" class="container__select"></select>
+                </div>
+                <div class="container__lista" id="containerLista" style="display: none;" >
+                    <ul id="listaProductos" ></ul>
+                </div>
+                <div class="container__lista" id="containerEliminarProducto" style="display: none;">
+                    <p>Selecciones una categoría</p>
+                    <select id="categoriaSelectEliminar" class="container__select"></select>
+                    <p>Selecciones un producto a eliminar</p>
+                    <select id="productoSelectEliminar" class="container__select"></select>
+                </div>
+                <div class="container__botones">
+                    <button onclick="irAgregar();" class="container__boton" id="btnIrAgregar" style="display: none;">Ir a Agregar</button>
+                    <button onclick="agregarProducto();" class="container__boton"  id="btnAgregar">Agregar Producto</button>
+                    <button onclick="mostrarLista();" class="container__boton" id="btnMostrarLista">Mostrar Lista</button>
+                    <button onclick="eliminarProducto();" class="container__boton"  id="btnEliminar" style="display: none;">Eliminar Producto</button>
+                    <button onclick="mostrarEliminar();" class="container__boton" id="btnMostrarEliminar" style="display: none;">Ir a Eliminar </button>
+
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
